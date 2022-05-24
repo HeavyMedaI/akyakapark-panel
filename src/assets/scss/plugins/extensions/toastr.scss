@@ -1,0 +1,48 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+
+// Core variables and mixins overrides
+@import "../../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../../core/variables/components-variables";
+
+// toast container opacity
+
+#toast-container > div {
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  filter: alpha(opacity=90);
+  max-width: none;
+}
+
+// toast container hover shadow
+
+// toastify colors
+
+.Toastify__toast-container {
+  & > div {
+    opacity: 0.9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    filter: alpha(opacity=90);
+    max-width: none;
+  }
+
+  .Toastify__toast--success {
+    background: $success;
+  }
+
+  .Toastify__toast--info {
+    background: $info;
+  }
+
+  .Toastify__toast--warning {
+    background: $warning;
+  }
+
+  .Toastify__toast--error {
+    background: $danger;
+  }
+}

@@ -1,0 +1,15 @@
+@import "./bootstrap.scss";
+@import "./components.scss";
+@import "./bootstrap-extended.scss";
+@import "./colors.scss";
+@import "./iconfont.scss";
+@import "./custom-rtl.scss";
+
+.no-padding {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.z-ind {
+    z-index: 99999 !important;
+}
